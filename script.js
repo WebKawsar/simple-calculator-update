@@ -1,4 +1,3 @@
-
 /******************************************Complete ***********************************/
 
 var history = document.getElementById("history");
@@ -7,11 +6,9 @@ var result = document.getElementById("result");
 var buttons = document.querySelectorAll("button");
 
 let resultValue = "";
-
 for (let i = 0; i < buttons.length; i++) {
 
     const element = buttons[i];
-    
     element.addEventListener("click", function(){
         
         var history = document.getElementById("history");
@@ -19,10 +16,8 @@ for (let i = 0; i < buttons.length; i++) {
         var result = document.getElementById("result");
         
         buttonText = event.target.innerText;
-
         if(buttonText === "AC") {
 
-            
             history.innerText = "";
             sign.innerText = "";
             result.innerText = "";
@@ -41,24 +36,19 @@ for (let i = 0; i < buttons.length; i++) {
                 sign.innerText = buttonText;
                 result.innerText = "";
                 resultValue = "";
-                
-                
+                   
         }
         else if(buttonText == "=") {
 
-
                 if(sign.innerText == "+"){
                     
-
                     historyValue = parseFloat(history.innerText);
                     resultValue =  parseFloat(result.innerText);
                     getValue = eval(historyValue + resultValue);
                     sign.innerText = getValue;
-
                     result.innerText = "";
                     history.innerText = "";
                     resultValue = "";
-
 
                 }
                 if(sign.innerText == "-"){
@@ -67,7 +57,6 @@ for (let i = 0; i < buttons.length; i++) {
                     resultValue =  parseFloat(result.innerText);
                     getValue = eval(historyValue - resultValue);
                     sign.innerText = getValue;
-
                     result.innerText = "";
                     history.innerText = "";
                     resultValue = "";
@@ -76,12 +65,10 @@ for (let i = 0; i < buttons.length; i++) {
 
                 if(sign.innerText == "*"){
                     
-
                     historyValue = parseFloat(history.innerText);
                     resultValue =  parseFloat(result.innerText);
                     getValue = eval(historyValue * resultValue);
                     sign.innerText = getValue;
-
                     result.innerText = "";
                     history.innerText = "";
                     resultValue = "";
@@ -94,25 +81,15 @@ for (let i = 0; i < buttons.length; i++) {
                     resultValue =  parseFloat(result.innerText);
                     getValue = eval(historyValue / resultValue);
                     sign.innerText = getValue;
-
                     result.innerText = "";
                     history.innerText = "";
                     resultValue = "";
 
                 }
 
-                
-
-
-
         }
         
-
         
     });
 
-    
 }
-
-
-
