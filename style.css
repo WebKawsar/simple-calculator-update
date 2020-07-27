@@ -40,3 +40,12 @@ button:hover{
     text-align: right;
     height: 20px;
 }
+
+
+footer-area p {
+    text-align: center;
+}
+
+.highlight {
+    color: tomato;
+}
