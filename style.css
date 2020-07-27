@@ -32,7 +32,8 @@ button {
 button:hover{
     cursor: pointer;
 }
-
+#history,
+#sign,
 #result {
     text-align: right;
 }
