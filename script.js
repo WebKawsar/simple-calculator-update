@@ -1,5 +1,5 @@
 
-/******************************************complete ***********************************/
+/******************************************Complete ***********************************/
 
 var history = document.getElementById("history");
 var sign = document.getElementById("sign");
@@ -33,19 +33,9 @@ for (let i = 0; i < buttons.length; i++) {
 
             resultValue = resultValue + buttonText;
             result.innerText = resultValue;
-            
-                // getResultValue = document.getElementById("result").innerText;
-                // setValue = getResultValue + buttonText;
-                // document.getElementById("result").innerText = setValue;
 
         }
         else if(buttonText == "+" || buttonText == "-" || buttonText == "*" || buttonText == "/"){
-
-                // historyValue = resultValue + " " + buttonText;
-                // history.innerText = historyValue;
-                // result.innerText = "";
-                // resultValue = "";
-
                 
                 history.innerText = resultValue;
                 sign.innerText = buttonText;
