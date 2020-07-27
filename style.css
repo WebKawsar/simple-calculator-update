@@ -26,14 +26,17 @@ th{
 }
 
 button {
-    padding: 30px;
+    padding: 25px;
+    border-radius: 5px;
 }
 
 button:hover{
     cursor: pointer;
+    background-color: lightsalmon;
 }
 #history,
 #sign,
 #result {
     text-align: right;
+    height: 20px;
 }
