@@ -3,7 +3,9 @@ body {
     padding: 0;
 }
 
-
+h1 {
+    font-family: tahoma;
+}
 .calculator,
 form {
     margin-top: 50px;
@@ -44,9 +46,12 @@ button:hover{
 
 .footer-area p {
     text-align: center;
+    text-transform: capitalize;
 }
 
 .highlight {
     color: tomato;
     text-transform: capitalize;
+    font-weight: bold;
+    font-style: italic;
 }
