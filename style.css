@@ -42,10 +42,11 @@ button:hover{
 }
 
 
-footer-area p {
+.footer-area p {
     text-align: center;
 }
 
 .highlight {
     color: tomato;
+    text-transform: capitalize;
 }
